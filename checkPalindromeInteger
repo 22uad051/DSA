@@ -1,0 +1,21 @@
+class Solution {
+    public boolean isPalindrome(int n) {
+        int org =n;
+        int rev =0;
+        while(n>0){
+            int ld=n%10;
+            rev=rev*10+ld;
+            n=n/10;
+        }
+        return org==rev;
+        
+    }    
+        
+        public static void main(String[]args){
+            Solution s = new Solution();
+            System.out.print(s.isPalindrome(141));
+            System.out.print(s.isPalindrome(1491));
+        }
+        
+    
+}
