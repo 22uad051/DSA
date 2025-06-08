@@ -1,0 +1,16 @@
+class Solution {
+    static long kthDigit(int a, int b, int k) {
+     long long power = (lonng)Math.pow(a,b);
+     long result=0;
+     int i=1;
+     while(power>0){
+         long digit = power%10;
+         if(i==k){
+            result=digit;
+         }
+         power=power/10;
+         
+     }
+     System.out.println(result);
+    }
+}
