@@ -1,0 +1,14 @@
+class Solution {
+    public int corner_digitSum(int n) {
+        int ld =n%10;
+        int fd=0;
+        while(n>0){
+             fd =n%10;
+            n=n/10;
+        }
+        return fd+ld;
+
+
+        
+    }
+}
