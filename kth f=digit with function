@@ -1,0 +1,17 @@
+class Solution {
+    static long kthDigit(int a, int b, int k) {
+        long power=(long)Math.pow(a,b);
+        int i=1;
+        while(power>0){
+            long kthdigit=power%10;
+            if(i==k){
+                return kthdigit;
+            }
+            i++;
+            power=power/10;
+        }
+        return 0;
+
+
+    }
+}
