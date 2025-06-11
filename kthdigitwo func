@@ -1,0 +1,15 @@
+class Main {
+    public static void main(String[] args) {
+        int a=11,b=2,k=2;
+        long power=(long)Math.pow(11,2);
+        int i=1;
+        while(power>0){
+            long kthdigit=power%10;
+            if(i==k){
+                System.out.println(kthdigit);
+            }
+            i++;
+            power=power/10;
+        }
+    }
+}
